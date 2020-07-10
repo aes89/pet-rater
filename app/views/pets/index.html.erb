@@ -1,4 +1,14 @@
 <h1> Index#Pet </h1>
-<%= link_to "New", "new" %>
+<%= link_to "New", "pets/new" %>
 
 
+<h1> Pets </h1>
+<% @pets.each do |pets| %>
+<div class ="card">
+    <p><%= pets.name %></p>
+    <p><%= pets.species %></p>
+    <p><%= pets.date_of_birth %></p>
+    <p><%= pets.sex %></p>
+    <p><%= link_to "edit", edit_pet_path(pets.id) %></p>
+    </div>
+<% end %>

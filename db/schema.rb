@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_07_08_065442) do
     t.integer "sex"
     t.text "species"
     t.integer "post_id"
+    t.date "date_of_birth"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
