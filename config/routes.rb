@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 root "pages#index"
 resources :pets
+resources :users
 
 # get "/pets", to: "pets#index", as: "pets"
 # post "/pets", to: "pets#create"
