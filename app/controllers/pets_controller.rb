@@ -23,6 +23,7 @@ class PetsController < ApplicationController
     end
 
     def show
+        @pets = Pet.find(params[:id])
     end
 
     def edit
@@ -39,6 +40,10 @@ class PetsController < ApplicationController
     end
 
     def destroy
+        @pets = Pet.find(params[:id])
+        @pets.destroy
+
+        redirect_to pets_path
     end
 
     private

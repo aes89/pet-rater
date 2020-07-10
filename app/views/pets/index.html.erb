@@ -10,5 +10,8 @@
     <p><%= pets.date_of_birth %></p>
     <p><%= pets.sex %></p>
     <p><%= link_to "edit", edit_pet_path(pets.id) %></p>
+    <p><%= link_to 'Delete Pet', pet_path(pets.id),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></p>
     </div>
 <% end %>
