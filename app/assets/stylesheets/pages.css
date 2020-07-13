@@ -1,0 +1,20 @@
+nav {
+  border: solid 2px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navlinks {
+  background: teal;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.session {
+  background: gray;
+  padding: 0;
+}
+/*# sourceMappingURL=pages.css.map */
